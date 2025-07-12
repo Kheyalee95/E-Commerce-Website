@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabista Shop</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo.png" alt="Fabista Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shop Content -->
+    <div class="shop-container">
+        <aside class="filter-panel">
+            <h2>Filters</h2>
+            <div class="filter-category">
+                <h3>Price Range</h3>
+                <label><input type="checkbox"> Under ₹500</label><br>
+                <label><input type="checkbox"> ₹500 - ₹1000</label><br>
+                <label><input type="checkbox"> ₹1000 - ₹2000</label><br>
+                <label><input type="checkbox"> Over ₹2000</label><br>
+            </div>
+            <div class="filter-category">
+                <h3>Categories</h3>
+                <label><input type="checkbox"> Women</label><br>
+                <label><input type="checkbox"> Men</label><br>
+                <label><input type="checkbox"> Kids</label><br>
+                <label><input type="checkbox"> Accessories</label><br>
+            </div>
+            <button class="filter-button">Apply Filters</button>
+        </aside>
+
+        <!-- Products Section -->
+        <section class="products-display">
+            <h1 id="women">Women</h1>
+            <div class="product-grid">
+                <div class="product-item" data-category="women" data-price="4499">
+                    <img src="Images/Women/Feature1.jpg" alt="Women's Product 1">
+                    <h3>StyleCast x Revolte</h3>
+                    <p>Evening Gown</p>
+                    <p>₹4499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="women" data-price="1299">
+                    <img src="Images/Women/Feature2.jpg" alt="Women's Product 2">
+                    <h3>ADDYVERO</h3>
+                    <p>Be Free Dress</p>
+                    <p>₹1299</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="women" data-price="3999">
+                    <img src="Images/Women/Feature3.jpg" alt="Women's Product 3">
+                    <h3>StyleCast</h3>
+                    <p>Bodycon Dress</p>
+                    <p>₹3999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="women" data-price="899">
+                    <img src="Images/Women/Feature4.jpg" alt="Women's Product 4">
+                    <h3>Sangria</h3>
+                    <p>Embroidered Kurta Set</p>
+                    <p>₹899</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="women" data-price="1699">
+                    <img src="Images/Women/Feature5.jpg" alt="Women's Product 5">
+                    <h3>Anouk</h3>
+                    <p>Ethnic Salwar</p>
+                    <p>₹1699</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="women" data-price="999">
+                    <img src="Images/Women/Feature 7.jpg" alt="Women's Product 6">
+                    <h3>Sera</h3>
+                    <p>Printed Top With Skirt</p>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <h1 id="men">Men</h1>
+            <div class="product-grid">
+                <div class="product-item" data-category="men" data-price="6999">
+                    <img src="Images/Men/Feature1.jpg" alt="Men's Product 1">
+                    <h3>Allen Solly</h3>
+                    <p>Men Suits</p>
+                    <p>₹6999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="men" data-price="999">
+                    <img src="Images/Men/Feature2.jpg" alt="Men's Product 2">
+                    <h3>Roadster</h3>
+                    <p>Skinny Torn Jeans</p>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="men" data-price="4999">
+                    <img src="Images/Men/Feature3.jpg" alt="Men's Product 3">
+                    <h3>KISAH</h3>
+                    <p>Sherwani Set</p>
+                    <p>₹4999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="men" data-price="749">
+                    <img src="Images/Men/Feature4.jpg" alt="Men's Product 4">
+                    <h3>Roadster</h3>
+                    <p>Cotton Casual Shirt</p>
+                    <p>₹749</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="men" data-price="1399">
+                    <img src="Images/Men/Feature5.jpg" alt="Men's Product 5">
+                    <h3>Anouk</h3>
+                    <p>Nehru Jacket</p>
+                    <p>₹1399</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="men" data-price="1529">
+                    <img src="Images/Men/Feature6.jpg" alt="Men's Product 6">
+                    <h3>Roadster</h3>
+                    <p>Padded Jacket</p>
+                    <p>₹1529</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <h1 id="kids">Kids</h1>
+            <div class="product-grid">
+                <div class="product-item" data-category="kids" data-price="949">
+                    <img src="Images/Kids/Feature1.jpg" alt="Kids' Product 1">
+                    <h3>BAESD</h3>
+                    <p>Floral Dress</p>
+                    <p>₹949</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="kids" data-price="699">
+                    <img src="Images/Kids/Feature2.jpg" alt="Kids' Product 2">
+                    <h3>LilPicks</h3>
+                    <p>Checkered Dress</p>
+                    <p>₹699</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="kids" data-price="549">
+                    <img src="Images/Kids/Feature3.jpg" alt="Kids' Product 3">
+                    <h3>Sangria</h3>
+                    <p>Printed Straight Dress</p>
+                    <p>₹549</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="kids" data-price="799">
+                    <img src="Images/Kids/Feature4.jpg" alt="Kids' Product 4">
+                    <h3>H&M</h3>
+                    <p>Boys Sweatshirt</p>
+                    <p>₹799</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="kids" data-price="599">
+                    <img src="Images/Kids/Feature5.jpg" alt="Kids' Product 5">
+                    <h3>Googo Gaaga</h3>
+                    <p>Boys Onsie</p>
+                    <p>₹599</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="kids" data-price="1299">
+                    <img src="Images/Kids/Feature6.jpg" alt="Kids' Product 6">
+                    <h3>BAESD</h3>
+                    <p>Cotton Jumper</p>
+                    <p>₹1299</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <h1>Accessories</h1>
+            <div class="product-grid">
+                <div class="product-item" id="handbag" data-category="accessories" data-price="2599">
+                    <img src="Images/Handbags/Feature1.jpg" alt="Accessories Product 1">
+                    <h3>White Lily</h3>
+                    <p>Handheld Bag</p>
+                    <p>₹2599</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="accessories" data-price="1899">
+                    <img src="Images/Handbags/Featue2.jpg" alt="Accessories Product 2">
+                    <h3>Allen Solly</h3>
+                    <p>Handheld Bag</p>
+                    <p>₹1899</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="accessories" data-price="1649">
+                    <img src="Images/Handbags/Feature3.jpeg" alt="Accessories Product 3">
+                    <h3>Lino Perros</h3>
+                    <p>Handheld Bag</p>
+                    <p>₹1649</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="accessories" data-price="799">
+                    <img src="Images/Handbags/Feature4.jpg" alt="Accessories Product 4">
+                    <h3>Kastner</h3>
+                    <p>Leather Belt</p>
+                    <p>₹799</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="accessories" data-price="399">
+                    <img src="Images/Handbags/Feature5.jpg" alt="Accessories Product 5">
+                    <h3>Shining Diva Fashion</h3>
+                    <p>Women Belt</p>
+                    <p>₹399</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="accessories" data-price="499">
+                    <img src="Images/Handbags/Feature6.jpg" alt="Accessories Product 6">
+                    <h3>REDHORNS</h3>
+                    <p>Women Leather Belt</p>
+                    <p>₹499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+        // Wait until the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButton = document.querySelector('.filter-button');
+    
+            filterButton.addEventListener('click', function () {
+                const selectedPriceRanges = Array.from(document.querySelectorAll('.filter-category:nth-of-type(1) input[type="checkbox"]:checked'))
+                    .map(checkbox => checkbox.parentElement.textContent.trim());
+    
+                const selectedCategories = Array.from(document.querySelectorAll('.filter-category:nth-of-type(2) input[type="checkbox"]:checked'))
+                    .map(checkbox => checkbox.parentElement.textContent.trim().toLowerCase());
+    
+                filterProducts(selectedPriceRanges, selectedCategories);
+            });
+    
+            function filterProducts(priceRanges, categories) {
+                const products = document.querySelectorAll('.product-item');
+    
+                products.forEach(product => {
+                    const productPrice = parseInt(product.getAttribute('data-price'));
+                    const productCategory = product.getAttribute('data-category').toLowerCase();
+    
+                    // Check if the product matches the selected price range
+                    const matchesPrice = priceRanges.some(range => {
+                        if (range === 'Under ₹500') return productPrice < 500;
+                        if (range === '₹500 - ₹1000') return productPrice >= 500 && productPrice <= 1000;
+                        if (range === '₹1000 - ₹2000') return productPrice > 1000 && productPrice <= 2000;
+                        if (range === 'Over ₹2000') return productPrice > 2000;
+                        return false;
+                    });
+    
+                    // Check if the product matches the selected category
+                    const matchesCategory = categories.length === 0 || categories.includes(productCategory);
+    
+                    if (matchesPrice && matchesCategory) {
+                        product.style.display = ''; 
+                    } else {
+                        product.style.display = 'none'; // Hide the product
+                    }
+                });
+            }
+        });
+    </script> 
+</body>
+</html>
